@@ -5,7 +5,7 @@
 
 ## Create a bank that users can interact with
 
-* As a user I can login and logout (Exit the program).
+* As a user I can login and logout.
 * As a user I can view my balance.
 * As a user I can withdraw money.
 * As a user I can deposit money.
