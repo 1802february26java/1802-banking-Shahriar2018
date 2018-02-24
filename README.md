@@ -10,6 +10,7 @@
 * As a user I can withdraw money.
 * As a user I can deposit money.
 * Optional: As a user I can register.
+* Optional: As a user I can view all my transactions.
 
 ## Requirements
 
