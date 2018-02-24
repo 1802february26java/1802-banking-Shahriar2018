@@ -3,7 +3,7 @@
 ## Presentations (Tuesday of Week 3)
 * Assignment closes on the same Tuesday at 9.00 A.M.
 
-## Create a bank that users can interact with.
+## Create a bank that users can interact with
 
 * As a user I can login and logout (Exit the program).
 * As a user I can view my balance.
