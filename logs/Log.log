@@ -461,3 +461,188 @@ java.sql.SQLException: ORA-01017: invalid username/password; logon denied
 2018-03-10 05:50:08 INFO  ConnectionUtil:17 - Connection successful
 2018-03-10 05:53:20 INFO  ConnectionUtil:17 - Connection successful
 2018-03-10 05:54:13 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 06:12:12 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 06:12:23 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 06:12:23 INFO  Main:68 - Enter Your Password 
+
+2018-03-10 06:12:32 INFO  Main:71 - Your Are Logged In
+2018-03-10 06:12:32 INFO  Main:79 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 06:12:40 INFO  Main:106 - Enter deposit amount
+2018-03-10 06:12:43 INFO  UserDAOImpl:56 - User Balance is being updated
+2018-03-10 06:12:43 INFO  UserDAOImpl:62 - Cann't be updated.Mistake in programming.
+2018-03-10 06:24:12 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 06:24:28 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 06:24:28 INFO  Main:68 - Enter Your Password 
+
+2018-03-10 06:24:32 INFO  Main:71 - Your Are Logged In
+2018-03-10 06:24:32 INFO  Main:79 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 06:24:42 INFO  Main:87 - Enter withdrawal amount
+2018-03-10 06:24:45 INFO  UserDAOImpl:56 - User Balance is being updated
+2018-03-10 06:24:45 INFO  UserDAOImpl:62 - Cann't be updated.Mistake in programming.
+2018-03-10 06:36:26 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 06:36:33 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 06:36:33 INFO  Main:68 - Enter Your Password 
+
+2018-03-10 06:36:35 INFO  Main:71 - Your Are Logged In
+2018-03-10 06:36:35 INFO  Main:79 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 06:36:38 INFO  Main:106 - Enter deposit amount
+2018-03-10 06:36:49 INFO  UserDAOImpl:56 - User Balance is being updated
+2018-03-10 06:36:49 INFO  UserDAOImpl:62 - Cann't be updated.Mistake in programming.
+2018-03-10 11:49:19 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:49:28 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 11:49:29 INFO  Main:68 - Enter Your Password 
+
+2018-03-10 11:49:34 INFO  Main:71 - Your Are Logged In
+2018-03-10 11:49:34 INFO  Main:79 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 11:49:39 INFO  Main:87 - Enter withdrawal amount
+2018-03-10 11:51:32 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:51:55 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:52:01 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 11:55:28 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:55:35 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 11:56:26 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:56:37 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 11:56:37 INFO  Main:68 - Enter Your Password 
+
+2018-03-10 11:56:46 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 11:56:51 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:00:55 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:01:01 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:01:55 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:08:11 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:08:30 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:10:37 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:10:47 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:14:18 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:16:02 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:16:15 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:16:16 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:16:24 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:16:24 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:16:29 INFO  Main:114 - Enter deposit amount
+2018-03-10 12:16:32 INFO  UserDAOImpl:57 - User Balance is being updated
+2018-03-10 12:16:33 INFO  UserDAOImpl:63 - Cann't be updated.Mistake in programming.
+2018-03-10 12:18:27 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:18:37 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:18:37 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:18:42 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:20:25 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:27:03 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:28:27 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:28:32 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:30:00 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:30:25 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:30:38 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:31:05 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:33:40 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:33:47 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:33:47 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:34:21 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:34:26 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:34:26 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:34:31 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:34:31 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:34:34 INFO  Main:95 - Enter withdrawal amount
+2018-03-10 12:36:20 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:36:26 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:36:26 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:36:37 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:36:37 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:36:40 INFO  Main:95 - Enter withdrawal amount
+2018-03-10 12:36:42 INFO  UserDAOImpl:57 - User Balance is being updated
+2018-03-10 12:36:42 INFO  UserDAOImpl:63 - Cann't be updated.Mistake in programming.
+2018-03-10 12:37:56 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:39:00 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:39:04 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:39:57 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:40:42 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:41:56 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:42:17 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:42:28 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:42:28 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:42:37 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:42:37 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:42:39 INFO  Main:115 - Enter deposit amount
+2018-03-10 12:42:42 INFO  UserDAOImpl:57 - User Balance is being updated
+2018-03-10 12:42:42 INFO  UserDAOImpl:63 - Cann't be updated.Mistake in programming.
+2018-03-10 12:43:01 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:43:47 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:45:24 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:45:28 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:45:28 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:45:30 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:45:30 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:45:33 INFO  Main:115 - Enter deposit amount
+2018-03-10 12:45:35 INFO  UserDAOImpl:57 - User Balance is being updated
+2018-03-10 12:45:35 INFO  UserDAOImpl:63 - Cann't be updated.Mistake in programming.
+2018-03-10 12:47:03 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:47:31 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:47:35 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:47:35 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:47:36 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:47:36 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:47:48 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:48:00 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:48:00 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:48:02 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:48:02 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:48:06 INFO  Main:115 - Enter deposit amount
+2018-03-10 12:48:09 INFO  UserDAOImpl:57 - User Balance is being updated
+2018-03-10 12:48:10 INFO  UserDAOImpl:63 - Cann't be updated.Mistake in programming.
+2018-03-10 12:50:18 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:50:24 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:50:24 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:50:26 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:50:26 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:50:29 INFO  Main:115 - Enter deposit amount
+2018-03-10 12:50:32 INFO  UserDAOImpl:55 - User Balance is being updated
+2018-03-10 12:51:12 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 12:51:24 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 12:51:24 INFO  Main:76 - Enter Your Password 
+
+2018-03-10 12:51:26 INFO  Main:79 - Your Are Logged In
+2018-03-10 12:51:26 INFO  Main:87 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 12:51:33 INFO  Main:95 - Enter withdrawal amount
+2018-03-10 12:51:40 INFO  UserDAOImpl:55 - User Balance is being updated
+2018-03-10 13:08:32 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:08:54 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:09:16 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:10:29 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:11:46 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:11:57 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:12:50 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:13:52 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:15:01 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:16:02 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:16:51 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:17:04 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:19:18 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:21:21 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:21:42 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:21:58 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:24:52 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:25:55 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:26:10 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 13:26:10 INFO  Main:77 - Enter Your Password 
+
+2018-03-10 13:26:20 INFO  Main:80 - Your Are Logged In
+2018-03-10 13:26:20 INFO  Main:88 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 13:26:25 INFO  Main:96 - Enter withdrawal amount
+2018-03-10 13:26:44 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 13:26:57 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 13:26:57 INFO  Main:77 - Enter Your Password 
+
+2018-03-10 13:27:00 INFO  Main:80 - Your Are Logged In
+2018-03-10 13:27:00 INFO  Main:88 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 13:27:09 INFO  Main:96 - Enter withdrawal amount
+2018-03-10 13:27:24 INFO  UserDAOImpl:55 - User Balance is being updated

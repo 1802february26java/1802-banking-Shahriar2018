@@ -11,33 +11,39 @@ public class CheckException {
 	public boolean checkAvailabilty(String uname) {	
 		PreparedStatement stmt = null;
 		User user1 = null;
-		boolean t=true;;
+		boolean t=false;;
 		try {Connection connection =null;
 			connection = ConnectionUtil.getConnection();
-			String sql = " SELECT * FROM BANKUSERS ";			
+			String sql = " SELECT * FROM BANKUSERS WHERE B_UserName=? ";			
 			stmt = connection.prepareStatement(sql);
-			System.out.println("Select statement is being executed");
+			//System.out.println("Select statement is being executed");
+			stmt.setString(1, uname);
 			ResultSet rs = stmt.executeQuery();
-			if (rs.next()) {
-				user1 = new User();
-				user1.setPassword(rs.getString("B_PASSWORD"));
-				user1.setUsername(rs.getString("B_UserName"));
+			 while(rs.next()) {
+				//user1 = new User();
+				//user1.setPassword(rs.getString("B_PASSWORD"));
+				//user1.setUsername(rs.getString("B_UserName"));
 				String same=rs.getString("B_UserName");
 				//System.out.println("user name here in check is "+same);
-				if(uname.equals(rs.getString(same))) {
+				if(uname.equals(same)) {
+					
 					t=true;
+					break;
 					}
 				else {
 					t=false;
 				}
-				user1.setBalance(rs.getLong("B_BALANCE"));
+				
 				}
 			
 			
 			
 		} catch (SQLException e) {
 			
-			//e.printStackTrace();
+			e.printStackTrace();
+			/**
+		     * Prints this throwable and its backtrace to the
+		     * standard error stream. This method prints a stack trace for this*/
 		} finally {
 			
 		}

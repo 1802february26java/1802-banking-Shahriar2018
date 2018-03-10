@@ -1,6 +1,7 @@
 package com.revature.controller;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
 
@@ -16,19 +17,21 @@ import com.revature.util.ConnectionUtil;
  * Try not to have any logic at all on this class.
  */
 public class Main {
+	//static String pass;
 	private static Logger logger = Logger.getLogger(Main.class);
 
 	public static UserDAO getUserDAO() {
 		return new UserDAOImpl();
 	}
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws SQLException,InputMismatchException {
 
 	    try (Connection connection = ConnectionUtil.getConnection()) {
 	    	User user = new User();
 	    	System.out.println("Do you have an account with our bank?"
 	    			+ "\nPress y for yes and n for no");
 	    	Scanner sc = new Scanner(System.in);
+	    	
             while (sc.hasNext()) {
 	    	
 	    	/*User Registration*/
@@ -37,7 +40,7 @@ public class Main {
 	    	System.out.println("Enter your user name \n");
 	    	String uname= sc.next().toLowerCase();
 	    	if(new CheckException().checkAvailabilty(uname)) {
-	    		System.out.println("USERNAME ALREADY EXISTS.Try Again!");
+	    		System.out.println("\nUSERNAME ALREADY EXISTS.Try Again!");
 	    		break;
 	    	}
 	    	user.setUsername(uname);
@@ -48,20 +51,26 @@ public class Main {
 	    	Long am= sc.nextLong();
 	    	user.setBalance(am);
 	    	getUserDAO().addUser(user);
-	    	System.out.println("Your present balance is :"+user.getBalance());
+	    	System.out.println("Congratulation!!Your present balance is :"+user.getBalance());
 	    	}
 	    	
-	    	/*Logging into a old Account*/
+	    	/*Logging into an old Account*/
+	    	
 	    	if(answer.equals("y")) {
 		/* Asking for User ID */
-	        System.out.println("Enter Your UserName\\n\"");
+	        System.out.println("Enter Your UserName \n");
 			String ID = sc.next().toLowerCase();
+			if(!new CheckException().checkAvailabilty(ID)) {
+	    		System.out.println("USERNAME DOESN'T MATCH.\nYOu are logged Out");
+	    		break;
+	    	}
 			
 			
 		/* Pulling UP password and balance based on userID */
+	
 			user = getUserDAO().LogIn(ID);
 			Long balance = user.getBalance();
-			String pass = user.getPassword();
+			 String pass = user.getPassword();
 		
 			
 		/* Matching Entered password with saved password */
@@ -90,7 +99,8 @@ public class Main {
 			  System.out.println("You don't have that much money in your account");
 				                  } 
 			  else {
-			 user.setBalance(balance - m);
+			 user.setBalance(balance - m);//fix update in setBalance
+			 
 			 System.out.println("your new balance is after withdrawal!" + user.getBalance());
 			 getUserDAO().UpdateBalance(user.getBalance(), pass);
 			 break;
@@ -101,13 +111,13 @@ public class Main {
 			System.out.println("your balance is :" + user.getBalance());
 				 }
 			 
-			 /*Deposit Money*/
+			 /*Deposit Money  fix in USERDAOIMPL*/ 
 			 if(input.equals("d")) {
 				 logger.info("Enter deposit amount");
 				 Long d = sc.nextLong(); 
 				 user.setBalance(balance+d);
 				 System.out.println("your new balance is " + user.getBalance());
-				 getUserDAO().UpdateBalance(user.getBalance(), pass);
+				 getUserDAO().UpdateBalance(user.getBalance(), user.getUsername());
 				 }
 			 else {
 				 System.out.println("You are logged out!");

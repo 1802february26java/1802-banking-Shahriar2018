@@ -26,7 +26,7 @@ public  class UserDAOImpl implements UserDAO {
 			
 			ResultSet rs = stmt.executeQuery();
 			
-			if (rs.next()) {
+			if ( rs.next()) {
 				user1 = new User();
 				user1.setPassword(rs.getString("B_PASSWORD"));
 				user1.setUsername(rs.getString("B_UserName"));
@@ -34,7 +34,8 @@ public  class UserDAOImpl implements UserDAO {
 				}
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("User doesn't exist");
+			//e.printStackTrace();
 		} finally {
 			closeResources();
 		}
@@ -43,16 +44,14 @@ public  class UserDAOImpl implements UserDAO {
 		
 	}
 		@Override
-		public boolean UpdateBalance(long balance,String pass) {
+		public boolean UpdateBalance(long balance,String uname) {
+			User user=new User();
 		try {Connection connection =null;
 		connection = ConnectionUtil.getConnection();
-		String sql = "UPDATE BankUsers" + 
-				"SET  B_BALANCE = ?" + 
-				"WHERE B_PASSWORD=? ;";	
+		String sql = "UPDATE BankUsers SET  B_BALANCE = ? WHERE   B_UserName=?" ;
 		stmt = connection.prepareStatement(sql);
         stmt.setLong(1,balance);
-		stmt.setString(2,pass);
-		//connection.commit();
+		stmt.setString(2,uname);
         logger.info("User Balance is being updated");
 		if (stmt.executeUpdate()!=0)
 			return true;
@@ -107,4 +106,47 @@ public  class UserDAOImpl implements UserDAO {
 				e.printStackTrace();
 			}
 	
-}}
+}
+		@Override
+		public boolean checkAvailabilty(String uname) {	
+			PreparedStatement stmt = null;
+			User user1 = null;
+			boolean t=true;;
+			try {Connection connection =null;
+				connection = ConnectionUtil.getConnection();
+				String sql = " SELECT * FROM BANKUSERS  ";			
+				stmt = connection.prepareStatement(sql);
+				//System.out.println("Select statement is being executed");
+				stmt.setString(1, uname);
+				ResultSet rs = stmt.executeQuery();
+				 while(rs.next()) {
+					user1 = new User();
+					//user1.setPassword(rs.getString("B_PASSWORD"));
+					user1.setUsername(rs.getString("B_UserName"));
+					String same=rs.getString("B_UserName");
+					//System.out.println("user name here in check is "+same);
+					if(uname.equals(same)) {
+						
+						t=true;
+						break;
+						}
+					else {
+						t=false;
+					}
+					//user1.setBalance(rs.getLong("B_BALANCE"));
+					}
+				
+				
+				
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			} finally {
+				
+			}
+			
+			return t;
+			
+			}
+		
+}
