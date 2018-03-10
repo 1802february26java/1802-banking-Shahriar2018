@@ -8,11 +8,12 @@ import com.revature.model.User;
 import com.revature.util.ConnectionUtil;
 
 public class CheckException {
+	PreparedStatement stmt = null;
+	User user1 = null;
+	Connection connection =null;
 	public boolean checkAvailabilty(String uname) {	
-		PreparedStatement stmt = null;
-		User user1 = null;
 		boolean t=false;;
-		try {Connection connection =null;
+		try {
 			connection = ConnectionUtil.getConnection();
 			String sql = " SELECT * FROM BANKUSERS WHERE B_UserName=? ";			
 			stmt = connection.prepareStatement(sql);
@@ -45,12 +46,31 @@ public class CheckException {
 		     * Prints this throwable and its backtrace to the
 		     * standard error stream. This method prints a stack trace for this*/
 		} finally {
-			
+			closeResources();
 		}
 		
 		return t;
 		
 		}
+
+	private void closeResources() {
+		try {
+			if (stmt != null)
+				stmt.close();
+		} catch (SQLException e) {
+			System.out.println("Could not close statement!");
+			e.printStackTrace();
+		}
+		
+		try {
+			if (connection != null)
+				connection.close();
+		} catch (SQLException e) {
+			System.out.println("Could not close connection!");
+			e.printStackTrace();
+		}
+		
+	}
 
 
 		
