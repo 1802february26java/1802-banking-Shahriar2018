@@ -75,15 +75,11 @@ public  class UserDAOImpl implements UserDAO {
 			try {
 				Connection connection =null;
 				connection = ConnectionUtil.getConnection();
-				String sql = "INSERT INTO Books VALUES (?, ?, ?)";
+				String sql = "INSERT INTO BankUsers VALUES (?, ?, ?)";
 				stmt = connection.prepareStatement(sql);	
 				stmt.setString(1, user.getUsername());
 				stmt.setString(2, user.getPassword());
 				stmt.setLong(3, user.getBalance());
-				
-				// If we were able to add our book to the DB, we want to return true. 
-				// This if statement both executes our query, and looks at the return 
-				// value to determine how many rows were changed
 				if (stmt.executeUpdate() != 0)
 					return true;
 				else

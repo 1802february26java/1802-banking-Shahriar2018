@@ -23,10 +23,13 @@ public class Main {
 	public static void main(String[] args) {
 
 	    try (Connection connection = ConnectionUtil.getConnection()) {
-	    	logger.info("Enter Your UserName\n");
+	    	System.out.println("Do you have an account with our bank?");
+	    	
 			Scanner sc = new Scanner(System.in);
 	        while (sc.hasNext()) {
+	        	
 		/* Asking for User ID */
+	        System.out.println("Enter Your UserName\\n\"");
 			String ID = sc.next().toLowerCase();
 			User user = new User();
 			
