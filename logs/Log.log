@@ -1,0 +1,374 @@
+2018-03-07 22:38:21 ERROR ConnectionUtil:35 - Couldn't connect to the database
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@fahim.ctqxu0ey9hj6.us-east-1.rds.amazonaws.com:1521:MOHAMMED
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:22)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:32)
+2018-03-07 23:24:55 INFO  ConnectionUtil:33 - Connection successful
+2018-03-07 23:29:41 INFO  ConnectionUtil:33 - Connection successful
+2018-03-08 16:46:57 ERROR ConnectionUtil:35 - Couldn't connect to the database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:480)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:416)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:825)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:596)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:22)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:32)
+2018-03-08 16:47:35 INFO  ConnectionUtil:33 - Connection successful
+2018-03-09 15:46:33 INFO  ConnectionUtil:33 - Connection successful
+2018-03-09 16:22:38 INFO  ConnectionUtil:39 - PLEASE ENTER YOUR USER NAME
+2018-03-09 21:13:58 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:14:09 INFO  ConnectionUtil:32 - User LogIn is being executed
+2018-03-09 21:15:32 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:15:38 INFO  ConnectionUtil:32 - User LogIn is being executed
+2018-03-09 21:16:07 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:16:12 INFO  ConnectionUtil:32 - User LogIn is being executed
+2018-03-09 21:17:02 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:17:05 INFO  ConnectionUtil:32 - User LogIn is being executed
+2018-03-09 21:18:47 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:18:51 INFO  ConnectionUtil:32 - User LogIn is being executed
+2018-03-09 21:21:03 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:21:10 INFO  ConnectionUtil:33 - User LogIn is being executed
+2018-03-09 21:23:00 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:23:04 INFO  ConnectionUtil:33 - User LogIn is being executed
+2018-03-09 21:23:38 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:23:41 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 21:29:08 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:29:14 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 21:39:14 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:41:13 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 21:41:13 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:41:22 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 21:59:11 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 21:59:12 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 21:59:26 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:00:30 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 22:00:54 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 22:01:12 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 22:01:37 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 22:01:44 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:15:22 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 22:15:23 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 22:15:27 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:15:50 INFO  ConnectionUtil:38 - Connection Successful!!!
+2018-03-09 22:15:50 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 22:15:54 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:17:30 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 22:17:44 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:19:40 INFO  ConnectionUtil:36 - Connection Successful!!!
+2018-03-09 22:19:41 INFO  ConnectionUtil:32 - Enter Your UserName
+2018-03-09 22:20:02 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:47:50 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:47:55 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:49:36 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:49:36 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:49:40 INFO  ConnectionUtil:34 - User LogIn is being executed
+2018-03-09 22:51:13 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:51:14 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:51:22 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 22:51:34 INFO  Main:41 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 22:52:37 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:52:37 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:52:43 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 22:52:43 INFO  Main:41 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 22:52:53 INFO  Main:44 - Enter withdrawal amount
+2018-03-09 22:54:40 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:54:41 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:54:45 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 22:54:45 INFO  Main:41 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 22:54:49 INFO  Main:44 - Enter withdrawal amount
+2018-03-09 22:56:10 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:56:10 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:56:13 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 22:56:13 INFO  Main:41 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 22:56:16 INFO  Main:44 - Enter withdrawal amount
+2018-03-09 22:56:41 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 22:56:41 INFO  Main:33 - Enter Your UserName
+2018-03-09 22:56:44 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 22:56:44 INFO  Main:41 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 22:56:50 INFO  Main:44 - Enter withdrawal amount
+2018-03-09 23:06:16 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:06:17 INFO  Main:32 - Enter Your UserName
+2018-03-09 23:06:21 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:06:21 INFO  Main:43 - Enter Your Password 
+2018-03-09 23:06:29 INFO  Main:49 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:12:38 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:12:38 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:13:11 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:13:11 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:13:14 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:13:14 INFO  Main:44 - Enter Your Password 
+2018-03-09 23:17:56 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:17:58 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:18:01 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:18:01 INFO  Main:44 - Enter Your Password 
+2018-03-09 23:19:09 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:19:09 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:19:13 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:19:13 INFO  Main:44 - Enter Your Password 
+2018-03-09 23:19:33 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:19:33 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:19:35 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:19:35 INFO  Main:44 - Enter Your Password 
+2018-03-09 23:21:01 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:21:02 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:21:04 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:21:04 INFO  Main:45 - Enter Your Password 
+2018-03-09 23:21:37 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:21:38 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:21:40 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:21:40 INFO  Main:45 - Enter Your Password 
+2018-03-09 23:22:11 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:22:12 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:22:15 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:22:15 INFO  Main:45 - Enter Your Password 
+2018-03-09 23:24:55 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:24:56 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:25:00 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:25:00 INFO  Main:45 - Enter Your Password 
+2018-03-09 23:27:59 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:28:00 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:28:03 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:28:03 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:30:55 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:30:55 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:30:58 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:30:58 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:31:33 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:31:33 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:31:38 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:31:38 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:31:41 INFO  Main:48 - Your Are Logged In
+2018-03-09 23:31:41 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:32:03 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:32:40 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:32:40 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:32:44 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:32:44 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:32:47 INFO  Main:48 - Your Are Logged In
+2018-03-09 23:32:47 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:33:15 INFO  Main:61 - Enter withdrawal amount
+2018-03-09 23:35:33 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:35:33 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:35:36 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:35:36 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:38:03 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:38:03 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:38:07 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:38:07 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:38:12 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:38:16 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:38:16 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:38:16 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:39:00 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:39:01 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:39:04 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:39:04 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:39:46 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:39:46 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:39:50 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:39:50 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:40:23 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:40:24 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:40:27 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:41:02 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:41:04 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:41:05 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:41:05 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:41:18 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:41:18 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:41:21 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:41:21 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:41:52 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:41:53 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:41:56 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:41:56 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:41:57 INFO  Main:48 - Your Are Logged In
+2018-03-09 23:41:57 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:42:32 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:42:33 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:42:35 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:42:35 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:42:43 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:42:44 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:42:45 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:42:45 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:43:17 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:43:17 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:43:21 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:43:21 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:43:47 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:43:48 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:44:21 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:44:27 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:44:27 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:44:27 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:44:31 INFO  Main:48 - Your Are Logged In
+2018-03-09 23:44:31 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:44:46 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:44:47 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:44:50 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:44:50 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:46:32 INFO  ConnectionUtil:30 - Connection successful
+2018-03-09 23:46:32 INFO  Main:31 - Enter Your UserName
+
+2018-03-09 23:46:37 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-09 23:46:37 INFO  Main:45 - Enter Your Password 
+
+2018-03-09 23:46:40 INFO  Main:48 - Your Are Logged In
+2018-03-09 23:46:40 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-09 23:46:46 INFO  Main:61 - Enter withdrawal amount
+2018-03-10 00:18:29 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:18:29 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:18:34 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:18:34 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:18:36 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:18:36 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-10 00:18:44 INFO  Main:61 - Enter withdrawal amount
+2018-03-10 00:18:50 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:31:36 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:31:36 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:31:44 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:33:27 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:33:27 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:33:32 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:33:32 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:33:41 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:33:41 INFO  Main:56 - press w for withdrawal,d for deposit and anyother key to exit
+2018-03-10 00:33:44 INFO  Main:72 - Enter deposit amount
+2018-03-10 00:46:07 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:46:08 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:46:11 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:46:11 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:46:13 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:46:13 INFO  Main:56 - press w for withdrawal,d for deposit and e for exit
+2018-03-10 00:47:27 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:47:27 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:47:32 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:47:32 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:47:47 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:47:47 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:47:51 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:47:51 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:47:53 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:47:53 INFO  Main:56 - press w for withdrawal,d for deposit and e for exit
+2018-03-10 00:50:27 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:50:27 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:50:32 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:50:32 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:50:35 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:50:35 INFO  Main:56 - press w for withdrawal,d for deposit and any other key to exit
+2018-03-10 00:58:41 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:58:42 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:58:45 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:58:45 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:58:47 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:58:47 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 00:59:01 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 00:59:01 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 00:59:12 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 00:59:12 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 00:59:14 INFO  Main:48 - Your Are Logged In
+2018-03-10 00:59:14 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 00:59:33 INFO  Main:64 - Enter withdrawal amount
+2018-03-10 01:00:49 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 01:00:50 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 01:00:53 INFO  UserDAOImpl:34 - User LogIn is being executed
+2018-03-10 01:00:53 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 01:00:55 INFO  Main:48 - Your Are Logged In
+2018-03-10 01:00:55 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 01:35:51 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 01:35:52 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 01:35:56 INFO  UserDAOImpl:29 - User LogIn is being executed
+2018-03-10 01:35:56 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 01:35:59 INFO  Main:48 - Your Are Logged In
+2018-03-10 01:35:59 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 01:36:16 INFO  Main:82 - Enter deposit amount
+2018-03-10 01:36:45 INFO  ConnectionUtil:30 - Connection successful
+2018-03-10 01:36:45 INFO  Main:31 - Enter Your UserName
+
+2018-03-10 01:36:48 INFO  UserDAOImpl:29 - User LogIn is being executed
+2018-03-10 01:36:48 INFO  Main:45 - Enter Your Password 
+
+2018-03-10 01:36:50 INFO  Main:48 - Your Are Logged In
+2018-03-10 01:36:50 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-10 01:36:53 INFO  Main:82 - Enter deposit amount
