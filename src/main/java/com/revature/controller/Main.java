@@ -1,16 +1,11 @@
-package com.revature;
-
+package com.revature.controller;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
 import org.apache.log4j.Logger;
-
 import com.revature.model.User;
-import com.revature.repository.UserDAO;
-import com.revature.repository.UserDAOImpl;
+import com.revature.service.UserDAO;
+import com.revature.service.UserDAOImpl;
 import com.revature.util.ConnectionUtil;
 
 /**
@@ -69,6 +64,7 @@ public class Main {
 			  else {
 			 user.setBalance(balance - m);
 			 System.out.println("your new balance is after withdrawal!" + user.getBalance());
+			 getUserDAO().UpdateBalance(user.getBalance(), pass);
 			 break;
 				    }                 }
 			 
@@ -83,6 +79,7 @@ public class Main {
 				 Long d = sc.nextLong(); 
 				 user.setBalance(balance+d);
 				 System.out.println("your new balance is " + user.getBalance());
+				 getUserDAO().UpdateBalance(user.getBalance(), pass);
 				 }
 			 else {
 				 System.out.println("You are logged out!");
