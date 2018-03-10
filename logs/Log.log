@@ -420,3 +420,44 @@ java.sql.SQLException: ORA-01017: invalid username/password; logon denied
 2018-03-10 02:22:14 INFO  Main:56 - press w for withdrawal,d for deposit b for balanceand any other key to exit
 2018-03-10 02:22:18 INFO  Main:83 - Enter deposit amount
 2018-03-10 02:22:20 INFO  UserDAOImpl:68 - Cann't be updated.Mistake in programming.
+2018-03-10 03:50:00 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 03:52:48 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:36:30 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:36:46 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:40:36 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:40:58 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:42:13 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:51:21 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:51:44 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:53:10 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:54:15 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:54:34 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:59:14 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 04:59:45 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:00:00 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:01:59 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:02:09 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:10:47 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:11:00 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:18:29 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:18:54 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:18:59 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:27:09 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:27:20 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:29:17 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:29:22 INFO  UserDAOImpl:25 - User LogIn is being executed
+2018-03-10 05:34:34 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:34:38 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 05:38:18 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:38:31 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 05:38:40 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:38:45 INFO  UserDAOImpl:25 - User LogIn is being executed........
+2018-03-10 05:39:32 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:39:33 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:40:27 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:45:34 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:46:54 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:48:21 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:50:08 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:53:20 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 05:54:13 INFO  ConnectionUtil:17 - Connection successful

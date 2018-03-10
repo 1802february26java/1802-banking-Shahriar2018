@@ -3,6 +3,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
+
+import com.revature.exception.CheckException;
 import com.revature.model.User;
 import com.revature.service.UserDAO;
 import com.revature.service.UserDAOImpl;
@@ -20,18 +22,41 @@ public class Main {
 		return new UserDAOImpl();
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 
 	    try (Connection connection = ConnectionUtil.getConnection()) {
-	    	System.out.println("Do you have an account with our bank?");
+	    	User user = new User();
+	    	System.out.println("Do you have an account with our bank?"
+	    			+ "\nPress y for yes and n for no");
+	    	Scanner sc = new Scanner(System.in);
+            while (sc.hasNext()) {
 	    	
-			Scanner sc = new Scanner(System.in);
-	        while (sc.hasNext()) {
-	        	
+	    	/*User Registration*/
+	    	String answer= sc.next().toLowerCase();
+	    	if(answer.equals("n")) {
+	    	System.out.println("Enter your user name \n");
+	    	String uname= sc.next().toLowerCase();
+	    	if(new CheckException().checkAvailabilty(uname)) {
+	    		System.out.println("USERNAME ALREADY EXISTS.Try Again!");
+	    		break;
+	    	}
+	    	user.setUsername(uname);
+	    	System.out.println("Enter your pass word\n");
+	    	String pw= sc.next().toLowerCase();
+	    	user.setPassword(pw);
+	    	System.out.println("Enter your Deposit amount");
+	    	Long am= sc.nextLong();
+	    	user.setBalance(am);
+	    	getUserDAO().addUser(user);
+	    	System.out.println("Your present balance is :"+user.getBalance());
+	    	}
+	    	
+	    	/*Logging into a old Account*/
+	    	if(answer.equals("y")) {
 		/* Asking for User ID */
 	        System.out.println("Enter Your UserName\\n\"");
 			String ID = sc.next().toLowerCase();
-			User user = new User();
+			
 			
 		/* Pulling UP password and balance based on userID */
 			user = getUserDAO().LogIn(ID);
@@ -89,7 +114,7 @@ public class Main {
 				 break;
 				               }
 			 }
-	        
+	    	}
 	      
 	        sc.close();
 

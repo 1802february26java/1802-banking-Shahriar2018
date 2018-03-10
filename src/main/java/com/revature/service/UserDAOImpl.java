@@ -22,8 +22,7 @@ public  class UserDAOImpl implements UserDAO {
 			String sql = " SELECT * FROM BANKUSERS WHERE B_UserName like ?";			
 			stmt = connection.prepareStatement(sql);
 			stmt.setString(1,uid);
-			System.out.println(stmt);
-			logger.info("User LogIn is being executed");
+			logger.info("User LogIn is being executed........");
 			
 			ResultSet rs = stmt.executeQuery();
 			
@@ -32,8 +31,7 @@ public  class UserDAOImpl implements UserDAO {
 				user1.setPassword(rs.getString("B_PASSWORD"));
 				user1.setUsername(rs.getString("B_UserName"));
 				user1.setBalance(rs.getLong("B_BALANCE"));
-				
-}
+				}
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
