@@ -44,8 +44,8 @@ public  class UserDAOImpl implements UserDAO {
 		
 	}
 		@Override
-		public boolean UpdateBalance(long balance,String uname) {
-			User user=new User();
+		public long UpdateBalance(long balance,String uname) {
+			//User user=new User();
 		try {Connection connection =null;
 		connection = ConnectionUtil.getConnection();
 		String sql = "UPDATE BankUsers SET  B_BALANCE = ? WHERE   B_UserName=?" ;
@@ -54,16 +54,17 @@ public  class UserDAOImpl implements UserDAO {
 		stmt.setString(2,uname);
         logger.info("User Balance is being updated");
 		if (stmt.executeUpdate()!=0)
-			return true;
+			return balance;
 		else
-			return false;		
+			return 0;		
 	} catch (SQLException e) {
 		logger.info("Cann't be updated.Mistake in programming.");
 		e.printStackTrace();
-		return false;
+		
 	} finally {
 		closeResources();
 	}
+		return balance;
 			
 		}
 		@Override

@@ -646,3 +646,7 @@ java.sql.SQLException: ORA-01017: invalid username/password; logon denied
 2018-03-10 13:27:00 INFO  Main:88 - press w for withdrawal,d for deposit b for balanceand any other key to exit
 2018-03-10 13:27:09 INFO  Main:96 - Enter withdrawal amount
 2018-03-10 13:27:24 INFO  UserDAOImpl:55 - User Balance is being updated
+2018-03-10 14:07:48 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 14:08:03 INFO  UserDAOImpl:55 - User Balance is being updated
+2018-03-10 14:12:15 INFO  ConnectionUtil:17 - Connection successful
+2018-03-10 14:12:16 INFO  UserDAOImpl:55 - User Balance is being updated
