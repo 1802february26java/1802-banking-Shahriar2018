@@ -26,11 +26,7 @@ public class CheckException extends Exception{
 		stmt.setString(1, uname);
 		ResultSet rs = stmt.executeQuery();
 		 while(rs.next()) {
-			//user1 = new User();
-			//user1.setPassword(rs.getString("B_PASSWORD"));
-			//user1.setUsername(rs.getString("B_UserName"));
 			String same=rs.getString("B_UserName");
-			//System.out.println("user name here in check is "+same);
 			if(uname.equals(same)) {
 				t=true;
 				 throw new NameAlreadyBoundException("UserName Already exists ! Please try again.");

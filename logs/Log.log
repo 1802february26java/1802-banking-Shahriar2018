@@ -708,3 +708,16 @@ User Balance has been updated
 2018-03-12 13:53:41 INFO  Main:94 - Your Are Logged In
 2018-03-12 13:53:41 INFO  Main:102 - press w for withdrawal,d for deposit b for balanceand any other key to exit
 2018-03-12 13:53:48 INFO  Main:110 - Enter withdrawal amount
+2018-03-12 13:57:51 INFO  ConnectionUtil:17 - Connection successful
+2018-03-12 15:58:32 INFO  ConnectionUtil:17 - Connection successful
+2018-03-12 15:58:58 INFO  UserDAOImpl:28 - User LogIn is being executed........
+2018-03-12 15:58:58 INFO  Main:91 - Enter Your Password 
+
+2018-03-12 15:59:05 INFO  Main:94 - Your Are Logged In
+2018-03-12 15:59:05 INFO  Main:102 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-12 16:09:54 INFO  Main:110 - Enter withdrawal amount
+2018-03-12 16:09:57 INFO  UserDAOImpl:58 - 
+
+User Balance has been updated
+2018-03-12 18:41:22 INFO  ConnectionUtil:17 - Connection successful
+2018-03-12 18:41:47 INFO  ConnectionUtil:17 - Connection successful
