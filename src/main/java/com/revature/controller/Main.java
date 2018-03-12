@@ -3,8 +3,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import org.apache.log4j.Logger;
+import javax.naming.NameAlreadyBoundException;
+import javax.security.auth.login.AccountException;
 
+import org.apache.log4j.Logger;
 import com.revature.exception.CheckException;
 import com.revature.model.User;
 import com.revature.service.UserDAO;
@@ -24,7 +26,7 @@ public class Main {
 		return new UserDAOImpl();
 	}
 
-	public static void main(String[] args) throws SQLException,InputMismatchException {
+	public static void main(String[] args) throws SQLException,InputMismatchException, AccountException {
 
 	    try (Connection connection = ConnectionUtil.getConnection()) {
 	    	User user = new User();
@@ -39,19 +41,31 @@ public class Main {
 	    	if(answer.equals("n")) {
 	    	System.out.println("Enter your user name \n");
 	    	String uname= sc.next().toLowerCase();
-	    	if(new CheckException().checkAvailabilty(uname)) {
-	    		System.out.println("\nUSERNAME ALREADY EXISTS.Try Again!");
-	    		break;
-	    	}
+	    	try {
+				if(new CheckException().checkAvailabilty(uname)) {
+					System.out.println("\nUSERNAME ALREADY EXISTS.Try Again!");
+				
+				}
+			} catch (NameAlreadyBoundException e) {
+				e.printStackTrace();
+				break;
+			}
 	    	user.setUsername(uname);
 	    	System.out.println("Enter your pass word\n");
 	    	String pw= sc.next().toLowerCase();
 	    	user.setPassword(pw);
 	    	System.out.println("Enter your Deposit amount");
 	    	Long am= sc.nextLong();
+	    	try {
+	    new CheckException().minDeposit100(am);
+			
+			} catch (AccountException e) {
+				e.printStackTrace();
+				break;
+			}
 	    	user.setBalance(am);
 	    	getUserDAO().addUser(user);
-	    	System.out.println("Congratulation!!Your present balance is :"+user.getBalance());
+	    	System.out.println("\nCongratulation!!You are Registered.\nYour present balance is :"+user.getBalance());
 	    	}
 	    	
 	    	/*Logging into an old Account*/
@@ -60,13 +74,13 @@ public class Main {
 		/* Asking for User ID */
 	        System.out.println("Enter Your UserName \n");
 			String ID = sc.next().toLowerCase();
-			if(!new CheckException().checkAvailabilty(ID)) {
-	    		System.out.println("USERNAME DOESN'T MATCH.\nYOu are logged Out");
-	    		break;
-	    	}
+		
+				if(!getUserDAO() .checkAvailabilty(ID)) {
+					System.out.println("USERNAME DOESN'T MATCH.\nYOu are logged Out");
+					break;
+				}
 			
-			
-		/* Pulling UP password and balance based on userID */
+			/* Pulling UP password and balance based on userID */
 	
 			user = getUserDAO().LogIn(ID);
 			Long balance = user.getBalance();
@@ -101,7 +115,7 @@ public class Main {
 			  else {
 			 user.setBalance(balance - m);//fix update in setBalance
 			 
-			 System.out.println("your new balance is after withdrawal!" + user.getBalance());
+			 System.out.println("your new balance is after withdrawal!" + user.getBalance()+"\n");
 			 getUserDAO().UpdateBalance(user.getBalance(), pass);
 			 break;
 				    }                 }

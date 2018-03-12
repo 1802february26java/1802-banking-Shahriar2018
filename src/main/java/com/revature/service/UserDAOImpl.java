@@ -4,6 +4,9 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import javax.naming.NameNotFoundException;
+
 import org.apache.log4j.Logger;
 import com.revature.model.User;
 import com.revature.util.ConnectionUtil;
@@ -52,7 +55,7 @@ public  class UserDAOImpl implements UserDAO {
 		stmt = connection.prepareStatement(sql);
         stmt.setLong(1,balance);
 		stmt.setString(2,uname);
-        logger.info("User Balance is being updated");
+        logger.info("\n\nUser Balance has been updated");
 		if (stmt.executeUpdate()!=0)
 			return balance;
 		else
@@ -108,6 +111,43 @@ public  class UserDAOImpl implements UserDAO {
 			}
 	
 }
+		@Override
+		public boolean checkAvailabilty(String uname) {
+			Connection connection = null;	
+			PreparedStatement stmt = null;	
+			boolean t=false;;
+		try {
+			connection = ConnectionUtil.getConnection();
+			String sql = " SELECT * FROM BANKUSERS WHERE B_UserName=? ";			
+			stmt = connection.prepareStatement(sql);
+			//System.out.println("Select statement is being executed");
+			stmt.setString(1, uname);
+			ResultSet rs = stmt.executeQuery();
+			 while(rs.next()) {
+				//user1 = new User();
+				//user1.setPassword(rs.getString("B_PASSWORD"));
+				//user1.setUsername(rs.getString("B_UserName"));
+				String same=rs.getString("B_UserName");
+				//System.out.println("user name here in check is "+same);
+				if(uname.equals(same)) {
+					t=true;
+					break;
+					
+					}
+				else 
+					t=false;
+			 }}catch (SQLException e) {
+					e.printStackTrace();
+					return false;
+				} finally {
+					closeResources();
+				}
+			
+			 
+			 return t;
+		}
+	
+
 
 		
 }
