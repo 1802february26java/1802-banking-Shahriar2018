@@ -721,3 +721,13 @@ User Balance has been updated
 User Balance has been updated
 2018-03-12 18:41:22 INFO  ConnectionUtil:17 - Connection successful
 2018-03-12 18:41:47 INFO  ConnectionUtil:17 - Connection successful
+2018-03-12 18:41:58 INFO  ConnectionUtil:17 - Connection successful
+2018-03-12 18:42:05 INFO  UserDAOImpl:28 - User LogIn is being executed........
+2018-03-12 18:42:05 INFO  Main:91 - Enter Your Password 
+
+2018-03-12 18:42:07 INFO  Main:94 - Your Are Logged In
+2018-03-12 18:42:07 INFO  Main:102 - press w for withdrawal,d for deposit b for balanceand any other key to exit
+2018-03-12 18:42:12 INFO  Main:130 - Enter deposit amount
+2018-03-12 18:42:14 INFO  UserDAOImpl:58 - 
+
+User Balance has been updated
